@@ -17,37 +17,86 @@
     </div>
 
     <main>
-        <section id="menu">
-            <h2>Food Items</h2>
-            <ul>
-                <li>
-                    <span class="item-name">Burger</span>
-                    <span class="item-price">$5.99</span>
-                    <input type="number" class="item-quantity" min="0" max="10" value="5">
-                </li>
-                <!-- Add more food items here -->
-                <li>
-                    <span class="item-name">taco</span>
-                    <span class="item-price">$4.99</span>
-                    <input type="number" class="item-quantity" min="0" max="20" value="10">
-                </li>
-                <li>
-                    <span class="item-name">Burger</span>
-                    <span class="item-price">$5.99</span>
-                    <input type="number" class="item-quantity" min="0" max="10" value="0">
-                </li>  
-                <li>
-                    <span class="item-name">Burger</span>
-                    <span class="item-price">$5.99</span>
-                    <input type="number" class="item-quantity" min="0" max="10" value="0">
-                </li>
-                <li>
-                    <span class="item-name">Burger</span>
-                    <span class="item-price">$5.99</span>
-                    <input type="number" class="item-quantity" min="0" max="10" value="0">
-                </li> 
-            </ul>
-        </section>
+        <h3>Students with meal plans can place an online in accordance to their meal exchange amount.</h3>
+        <h4>*Gold and Platinum holders are maxed at 5 online orders a week*</h4>
+        <div id="divmenu">
+            <section id="menu">
+                <h2>Food Items</h2>
+                <ul>
+                    <li>
+                        <span class="item-name">Burger</span>
+                        <span class="item-price">$4.99</span>
+                        <input type="number" class="item-quantity" min="0" max="2" value="0">
+                    </li>
+                    <!-- Add more food items here -->
+                    <li>
+                        <span class="item-name">taco</span>
+                        <span class="item-price">$2.99</span>
+                        <input type="number" class="item-quantity" min="0" max="5" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Potato and Beef</span>
+                        <span class="item-price">$9.99</span>
+                        <input type="number" class="item-quantity" min="0" max="3" value="0">
+                    </li>  
+                    <li>
+                        <span class="item-name">Pasta</span>
+                        <span class="item-price">$6.99</span>
+                        <input type="number" class="item-quantity" min="0" max="3" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Chicken and Rice</span>
+                        <span class="item-price">$7.99</span>
+                        <input type="number" class="item-quantity" min="0" max="3" value="0">
+                    </li> 
+                    <li>
+                        <span class="item-name">Macaroni and Fried chicken</span>
+                        <span class="item-price">$7.99</span>
+                        <input type="number" class="item-quantity" min="0" max="2" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Chicken burgers</span>
+                        <span class="item-price">$4.99</span>
+                        <input type="number" class="item-quantity" min="0" max="2" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Quesadilla</span>
+                        <span class="item-price">$5.99</span>
+                        <input type="number" class="item-quantity" min="0" max="5" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Mashed potatoes and pork chops</span>
+                        <span class="item-price">$5.99</span>
+                        <input type="number" class="item-quantity" min="0" max="2" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Beef pasta</span>
+                        <span class="item-price">$5.99</span>
+                        <input type="number" class="item-quantity" min="0" max="3" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Beef and Rice</span>
+                        <span class="item-price">$6.99</span>
+                        <input type="number" class="item-quantity" min="0" max="2" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Gumbo</span>
+                        <span class="item-price">$6.99</span>
+                        <input type="number" class="item-quantity" min="0" max="2" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Chicken Tenders/Fries</span>
+                        <span class="item-price">$3.99</span>
+                        <input type="number" class="item-quantity" min="0" max="10" value="0">
+                    </li>
+                    <li>
+                        <span class="item-name">Salad</span>
+                        <span class="item-price">$3.99</span>
+                        <input type="number" class="item-quantity" min="0" max="5" value="0">
+                    </li>
+                </ul>
+            </section>
+        </div>
         <section id="order-form">
             <h2>Order Form</h2>
             <form id="orderForm">
@@ -55,7 +104,7 @@
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <button type="submit">Place Order</button>
+                <button type="submit" onclick="alert('Thank you for ordering with Cougarhall');">Place Order</button>
             </form>
             <div id="error-message"></div>
         </section>
