@@ -5,6 +5,7 @@ const totalCostDisplay = document.getElementById('total-cost');
 // Function to calculate and display total cost
 function calculateTotalCost() {
     let totalCost = 0;
+
     // Iterate over each item quantity input
     quantityInputs.forEach(input => {
         // Get the price of the item associated with the input
@@ -24,3 +25,6 @@ quantityInputs.forEach(input => {
 
 // Initial calculation of total cost
 calculateTotalCost();
+if(input.value > 10){
+    input.value = 10;
+}
