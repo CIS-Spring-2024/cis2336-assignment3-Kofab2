@@ -99,8 +99,17 @@
                 </ul>
             </section>
         </div>
-
-        <p>Total Cost: <span id="total-cost">$0.00</span></p>
+        <p>Are you a student</p>
+        <form action="">
+            Yes:
+            <input type="radio" name="yesorno" value="">
+            No:
+            <input type="radio" name="yesorno" value="">
+        </form>
+        <div id="tcostdisplay">
+            <p>Total Cost: <span id="total-cost">$0.00</span></p>
+        </div>
+        
         <section id="order-form">
             <h2>Order Form</h2>
             <form id="orderForm">
@@ -108,7 +117,9 @@
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <button type="submit" onclick="alert('Thank you for ordering with Cougarhall');">Place Order</button>
+                <label for="UHID">UHID:</label>
+                <input type="text" id="UHID" name="UHID" minlength="7" maxlength="7">
+                <button type="submit" onclick="alert('Thank you for ordering with Cougarhall\nAn email will be send shortly');">Place Order</button>
             </form>
             <div id="error-message"></div>
         </section>

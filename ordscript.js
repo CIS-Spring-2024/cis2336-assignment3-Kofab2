@@ -32,4 +32,4 @@ if(input.valuev < 0){
     input.value = 0
     alert('Orders can not be negative');
 }
-//const Numerror = document.querySelectorAll('.error-message');
+ 
