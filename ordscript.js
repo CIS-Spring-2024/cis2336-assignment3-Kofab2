@@ -28,7 +28,7 @@ calculateTotalCost();
 if(input.value > 10){
     input.value = 10;
 }
-if(input.valuev < 0){
+if(input.value < 0){
     input.value = 0
     alert('Orders can not be negative');
 }
