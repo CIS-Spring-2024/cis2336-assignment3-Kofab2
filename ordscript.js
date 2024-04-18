@@ -33,6 +33,6 @@ if(input.valuev < 0){
     alert('Orders can not be negative');
 }
 function numonly(input){
-    var regex = /[^0-9]/gi;
+    var regex = /[^0-9]/g;
     input.value = input.value.replace(regex, "");
 }
